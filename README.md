@@ -1,19 +1,27 @@
-Corsha has developed a plugin to drop into Kong Konnect and integrate seamlessly
-with Corsha's API Security Platform. Corsha's platform provides a novel way to
-provide zero-trust for machine-to-machine API communication - a dynamic, fully
-automated multi-factor authentication (MFA) for APIs. The platform can be
-deployed to secure APIs in diverse architectures at the scale and speed of
-automated cloud and edge computing. The platform brings to APIs the same MFA
-security guarantees that have proven successful with human users – dynamic and
-continuous verification, a key element of zero-trust strategies.
+# Corsha Kong Gateway Plugin
+
+Corsha has developed a plugin for [Kong
+Gateway](https://docs.konghq.com/enterprise/) to integrate seamlessly with
+Corsha’s API Security Platform.
+
+Corsha's platform provides a novel way to provide zero-trust for
+machine-to-machine API communication - a dynamic, fully automated multi-factor
+authentication (MFA) for APIs. The platform can be deployed to secure APIs in
+diverse architectures at the scale and speed of automated cloud and edge
+computing. The platform brings to APIs the same MFA security guarantees that
+have proven successful with human users – dynamic and continuous verification, a
+key element of zero-trust strategies.
 
 Corsha’s platform tightly couples a lightweight authenticator with each API
 client. Once deployed, the authenticator starts developing a dynamic
 authentication stream out-of-band in Corsha’s Distributed Ledger Network (DLN).
+
 Corsha has built this DLN on top of a fully orchestrated Kubernetes platform
 allowing for seamless horizontal and vertical scaling. This private,
 permissioned DLN collects this unique authentication stream for each endpoint
-over time. When the API client is ready to make a call, it now has a fresh,
+over time. 
+
+When the API client is ready to make a call, it now has a fresh,
 one-time-use Corsha Credential to provide alongside any other primary
 authentication factors. This Corsha plugin for Kong allows Corsha to smoothly
 integrate into any Kong-powered architecture. Konnect Administrators are able to
